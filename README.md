@@ -16,3 +16,5 @@ Initially, the system couldn’t detect fast objects because the code had a samp
 - Lightweight and minimal code
 
 This repo contains the source code used in my video demonstration.
+
+🔗 Video: https://www.linkedin.com/in/radhees-bala-2a08652b4/
