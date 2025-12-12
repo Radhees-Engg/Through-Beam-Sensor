@@ -6,6 +6,7 @@ The setup uses:
 - LDR as the receiver  
 - Microcontroller (Arduino) for thresholding + counting 
 
+I've use the raw ADC values of the LDR which is easy to use and faster than calculating the resistance value of the LDR, anyway I have also inclued that formula to caluculate the resistance if you want you can also use that.
 Initially, the system couldn’t detect fast objects because the code had a sampling loop that slowed down the response time. After removing that loop and restructuring the logic, the sensor became fast enough to catch quick beam breaks.
 
 ## Features
