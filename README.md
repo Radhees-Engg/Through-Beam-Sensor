@@ -15,6 +15,13 @@ Initially, the system couldn’t detect fast objects because the code had a samp
 - Basic noise handling (ambient-light tested)
 - Lightweight and minimal code
 
+Not a big project, but I learned a few things in the process:  
+  
+\->Fast sampling matters way more than you think.  
+\->Code structure directly affects real-time detection.  
+\->Even a camera flash can mess with optical sensors.  
+\->Threshold tuning + basic filtering gives solid results.  
+
 This repo contains the source code used in my video demonstration.
 
 🔗 Video: https://www.linkedin.com/in/radhees-bala-2a08652b4/
