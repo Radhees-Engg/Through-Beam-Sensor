@@ -9,19 +9,21 @@ The setup uses:
 I've use the raw ADC values of the LDR which is easy to use and faster than calculating the resistance value of the LDR, anyway I have also inclued that formula to caluculate the resistance if you want you can also use that.
 Initially, the system couldn’t detect fast objects because the code had a sampling loop that slowed down the response time. After removing that loop and restructuring the logic, the sensor became fast enough to catch quick beam breaks.
 
+While recording the demo, I tested it with normal ambient light and made sure it didn’t reach the threshold, and it worked great except for the first couple of seconds where the count wasn’t increasing at all. Then I noticed my Cameras flash were on that messed with my threshold calculation. Then I adjusted the Threshold and it worked great
+
 ## Features
 - Fast, loop-free sampling
 - Threshold-based detection
 - Basic noise handling (ambient-light tested)
 - Lightweight and minimal code
 
-Not a big project, but I learned a few things in the process:  
+### Not a big project, but I learned a few things in the process:
   
-\->Fast sampling matters way more than you think.  
-\->Code structure directly affects real-time detection.  
-\->Even a camera flash can mess with optical sensors.  
-\->Threshold tuning + basic filtering gives solid results.  
+- Fast sampling matters way more than you think.
+- Code structure directly affects real-time detection.
+- Even a camera flash can mess with optical sensors.
+- Threshold tuning + basic filtering gives solid results.  
 
-This repo contains the source code used in my video demonstration.
+*This repo contains the source code used in my video demonstration.*
 
 🔗 Video: https://www.linkedin.com/in/radhees-bala-2a08652b4/
